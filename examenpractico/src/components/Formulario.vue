@@ -18,11 +18,6 @@
             </div>
 
             <div class="form-group">
-                <label>Dirección:</label>
-                <input v-model="direccion" type="text" placeholder="Av. Principal 123" />
-            </div>
-
-            <div class="form-group">
                 <label>Edad:</label>
                 <input v-model="edad" type="number" min="1" max="120" placeholder="Edad" />
             </div>
@@ -40,7 +35,6 @@ export default {
             nombre: '',
             correo: '',
             telefono: '',
-            direccion: '',
             edad: ''
         }
     },
@@ -49,7 +43,6 @@ export default {
             alert(`Nombre: ${this.nombre}
 Correo: ${this.correo}
 Teléfono: ${this.telefono}
-Dirección: ${this.direccion}
 Edad: ${this.edad}`)
         }
     }
